@@ -2,9 +2,8 @@ const markAsRead = document.querySelector('.mark-read')
 const notificationCounter = document.getElementById('notification-counter')
 const notificationTag = document.querySelectorAll(".user-notification")
 const unreadMessages = document.querySelectorAll('.unread');
-const notificationTagText = notificationTag.innerText
-const notificationTagTextNumber = unreadMessages.length;
 
+console.log(unreadMessages)
 
 // // // On clicking each notification, remove unread styles and update
 
@@ -16,11 +15,14 @@ notificationTag.forEach((message) => {
     })
 })
 
+
+
 // // on clicking mark as read, remove unread styles
 
 notificationTag.forEach(notification => {
     markAsRead.addEventListener('click', () => {
         notification.classList.remove('unread');
-        notificationCounter.innerText = 0
     })
 })
+
+
