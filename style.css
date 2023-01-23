@@ -98,7 +98,7 @@ main {
     color: black;
 }
 
-.active {
+.unread {
     background-color: var(--very-light-grayish-blue);
 }
 
