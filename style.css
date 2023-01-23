@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    /* ### Primary */
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+
+/* ### Neutral */
+
+--white: hsl(0, 0%, 100%);
+--very-light-grayish-blue: hsl(210, 60%, 98%);
+--light-grayish-blue-1: hsl(211, 68%, 94%);
+--light-grayish-blue-2: hsl(205, 33%, 90%);
+--grayish-blue: hsl(219, 14%, 63%);
+--dark-grayish-blue: hsl(219, 12%, 42%);
+--very-dark-blue: hsl(224, 21%, 14%);
+
+--font-jakarta: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* structure */
+
+body {
+   
+    background-color: var(--very-light-grayish-blue);
+    font-family: var(--font-jakarta);
+    min-height: 100vh;
+}
+
+main {
+    color: var(--grayish-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 50%;
+    background-color: var(--white);
+    border-radius: 30px;
+    padding: 2em;
+    height: 900px;
+}
+
+.container-header {
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-header .read {
+    float: right;
+    color: var(--grayish-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container-header .read:hover {
+    color: var(--Blue);
+}
+
+.container h2 {
+    display: inline;
+}
+
+/* container styles */
+
+
+#notification-counter {
+    background-color: var(--Blue);
+    display: inline-block;
+    width: 30px;
+    color: var(--white);
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 0.5em;
+    font-weight: 500;
+    
+}
+
+.user-notification {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    position: relative;
+    padding: 0.5em 0;
+}
+
+.user-notification p {
+    font-weight: 500;
+}
+
+.name {
+    color: black;
+}
+
+.active {
+    background-color: var(--very-light-grayish-blue);
+}
+
+.user-notification img {
+    width: 50px;
+    margin: 1em;
+}
+
+.user-notification-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.user-notification .name {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.user-notification .name:hover {
+    cursor: pointer;
+    color: var(--Blue);
+}
+
+.user-notification .link {
+    text-decoration: none;
+    color: var(--Blue);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.user-notification .message {
+    background-color: var(--white);
+    border: 1px solid var(--light-grayish-blue-1);
+    border-radius: 5px;
+    padding: 1em;
+    width: 95%;
+    margin: 0.8em 0;
+    cursor: pointer;
+}
+
+.user-notification .message:hover {
+    background-color: var(--light-grayish-blue-2);
+    border: none;
+}
+
+.user-notification .time {
+    color: var(--grayish-blue);
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: var(--Red);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 0.5em;
+}
+
+.chess {
+    margin-left: auto !important;
+}
+
+
+/* responsive styles */
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 90%;
+        padding: 0;
+    }
+}
+
+
+
+/* Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
