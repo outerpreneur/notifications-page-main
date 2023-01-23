@@ -62,7 +62,8 @@ main {
     color: var(--Blue);
 }
 
-.container h2 {
+.container h1 {
+    font-size: 1.4em;
     display: inline;
 }
 
