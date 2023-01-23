@@ -54,21 +54,9 @@ Users should be able to:
 
 This project has served to reinforce my javascript and CSS knowledge. I had a few challenges but I was able to overcome with some solutions I found.
 
-To see how you can add code snippets, see below:
+I was able to complete the project goals but now I would like to extend this exercise and be able to click all notifications as unread when you click mark all notifications as read or when all notifications are clicked. 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+I have tried to do it myself, but Im not able since the notification counter vaiable is within scope and not global. Any help or tip would be much appreciated
 
 
 ### Continued development
