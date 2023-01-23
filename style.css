@@ -51,7 +51,7 @@ main {
     justify-content: space-between;
 }
 
-.container-header .read {
+.container-header .mark-read {
     float: right;
     color: var(--grayish-blue);
     text-decoration: none;
@@ -99,7 +99,17 @@ main {
 }
 
 .unread {
-    background-color: var(--very-light-grayish-blue);
+    background-color: var(--light-grayish-blue-1);
+}
+
+.unread div p:first-of-type::after {
+    content: "";
+    margin-left: 0.5em;
+    background-color: var(--Red);
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
 }
 
 .user-notification img {
@@ -148,15 +158,6 @@ main {
 
 .user-notification .time {
     color: var(--grayish-blue);
-}
-
-.dot {
-    height: 8px;
-    width: 8px;
-    background-color: var(--Red);
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: 0.5em;
 }
 
 .chess {
